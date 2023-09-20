@@ -28,10 +28,11 @@ class _VideoCallScreenState extends State<VideoCallScreen> {
         useTextEditingController(text: _authMethods.user.displayName);
     joinMeeting() {
       _jitsiMeetMethods.createMeeting(
-          roomName: meetingIdController.text,
-          userName: nameController.text,
-          isAudioMuted: isAudioMuted,
-          isVideoMuted: isVideoMuted);
+        roomName: meetingIdController.text,
+        userName: nameController.text,
+        isAudioMuted: isAudioMuted,
+        isVideoMuted: isVideoMuted,
+      );
     }
 
     return Scaffold(

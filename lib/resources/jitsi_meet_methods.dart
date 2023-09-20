@@ -20,7 +20,14 @@ class JitsiMeetMethods {
       } else {
         name = userName;
       }
-      Map<String, Object> featureFlags = {};
+      Map<String, Object> featureFlags = {
+        "unsaferoomwarning.enabled": false,
+        "invite.enabled": true,
+        "lobby-mode.enabled": false,
+        "welcomepage.enabled": false,
+        "pip.enabled": true,
+        "resolution": 720,
+      };
       var options = JitsiMeetingOptions(
         roomNameOrUrl: roomName,
         userDisplayName: name,
