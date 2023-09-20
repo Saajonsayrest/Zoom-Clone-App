@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:jitsi_meet_wrapper/jitsi_meet_wrapper.dart';
 import 'package:zoom_clone/resources/auth_methods.dart';
-import 'package:zoom_clone/resources/firebase_methods.dart';
+import 'package:zoom_clone/resources/firestore_methods.dart';
 
 class JitsiMeetMethods {
   final AuthMethods _authMethods = AuthMethods();

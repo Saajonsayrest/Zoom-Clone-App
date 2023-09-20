@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:zoom_clone/resources/auth_methods.dart';
 import 'package:zoom_clone/screens/history_meeting_screen.dart';
 import 'package:zoom_clone/utils/colors.dart';
+import 'package:zoom_clone/widgets/custom_button.dart';
 import 'package:zoom_clone/widgets/home_screen_body.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -16,8 +19,13 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Widget> pages = [
     HomeScreenBody(),
     const HistoryMeetingScreen(),
-    Center(child: const Text('Contacts')),
-    Center(child: const Text('Settings')),
+    const Center(child: Text('Contacts')),
+    CustomButton(
+      text: 'Logout ',
+      onPressed: () => AuthMethods().signOut(),
+      height: 30.h,
+      radius: 20.r,
+    )
   ];
 
   @override

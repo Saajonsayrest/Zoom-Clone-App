@@ -21,6 +21,9 @@ dependencies:
   google_sign_in: ^6.1.5
   jitsi_meet_wrapper: ^0.2.0+1
   flutter_hooks: ^0.20.1
+  intl: ^0.18.1
+
+
 
 
 dev_dependencies:
