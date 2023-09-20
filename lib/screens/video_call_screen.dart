@@ -79,7 +79,7 @@ class _VideoCallScreenState extends State<VideoCallScreen> {
             text: 'Join',
             onPressed: _joinMeeting,
             height: 30.h,
-            radius: 10.r,
+            radius: 11.r,
           ),
           const Text(
             'JOIN OPTIONS',
