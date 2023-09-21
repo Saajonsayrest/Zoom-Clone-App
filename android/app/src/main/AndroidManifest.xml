@@ -3,8 +3,8 @@
 
     <application
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher"
-        android:label="zoom_clone"
+        android:icon="@mipmap/launcher_icon"
+        android:label="Zoom Clone"
         tools:replace="android:label">
         <activity
             android:name=".MainActivity"
